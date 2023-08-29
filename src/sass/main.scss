@@ -4,8 +4,11 @@
 @import "./base/normalize";
 @import "./base/typography";
 
+@import "./layout/header";
+@import "./layout/footer";
+
+
+@import "./pages/homepage";
+
 @import "./components/icons";
 @import "./components/buttons";
-
-@import "./layout/header";
-@import "./layout/booking";

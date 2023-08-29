@@ -20,9 +20,10 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul,
+ol {
   list-style: none;
+  padding: 0;
 }
 
 /* Set core root defaults */
@@ -41,6 +42,8 @@ body {
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: black;
 }
 
 /* Make images easier to work with */
@@ -80,18 +83,6 @@ select {
   font-family: "Roboto", sans-serif;
 }
 
-.icons {
-  display: inline-block;
-  width: 50px;
-  font-size: 20px;
-  text-align: center;
-}
-
-button {
-  border: none;
-  font-size: 18px;
-}
-
 .header-home {
   display: flex;
   flex-direction: column;
@@ -128,7 +119,39 @@ button {
   padding-right: 40px;
 }
 
-.booking-explore {
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(60, 60, 60);
+  color: white;
+}
+footer h3 {
+  width: 90%;
+  margin: 30px auto;
+}
+footer ul {
+  width: 90%;
+  margin: 0 auto 30px;
+}
+footer ul li {
+  color: white;
+  margin-bottom: 5px;
+}
+footer ul li .footer-link {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+footer ul li .footer-link .icons {
+  width: 30px;
+  text-align: start;
+}
+
+.booking .booking-explore {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -136,47 +159,55 @@ button {
   align-items: center;
   background-color: rgb(240, 240, 240);
 }
-.booking-explore h1 {
+.booking .booking-explore h1 {
   margin: 30px auto;
   font-size: 26px;
 }
-.booking-explore p {
+.booking .booking-explore p {
   text-align: center;
   width: 80%;
   font-size: 18px;
-  color: rgb(87, 87, 87);
+  font-weight: 300;
 }
-.booking-explore button {
+.booking .booking-explore button {
   margin: 30px 0 50px 0;
   height: 50px;
   width: 60%;
   color: white;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 25px;
-  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
 }
-
-.booking-how {
+.booking .booking-how {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
-.booking-how h1 {
+.booking .booking-how h1 {
   margin: 40px auto 10px;
   font-size: 26px;
   width: 90%;
 }
-.booking-how button {
+.booking .booking-how ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.booking .booking-how ul li {
+  width: 90%;
+}
+.booking .booking-how ul li button {
   margin: 15px;
   height: 80px;
-  width: 85%;
+  width: 95%;
   background-color: rgb(240, 240, 240);
   border-radius: 25px;
-  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
 }
-.booking-how button span {
+.booking .booking-how ul li button span {
   position: absolute;
   left: 5%;
   color: white;
@@ -186,11 +217,117 @@ button {
   border-radius: 15px;
   font-size: 18px;
 }
-.booking-how button p {
+.booking .booking-how ul li button p {
   margin-left: 20px;
   text-align: start;
   font-weight: 500;
 }
-.booking-how button p .icons {
+.booking .booking-how ul li button p .icons {
   color: gray;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin: 20px auto 0px;
+  background-color: rgb(240, 240, 240);
+}
+.restaurant h1 {
+  width: 90%;
+  margin: 30px auto 0;
+  font-size: 26px;
+}
+.restaurant ul {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.restaurant ul li {
+  margin: 10px auto;
+  background-color: white;
+  height: 250px;
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
+}
+.restaurant ul li a img {
+  width: 100%;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant ul li a h3 {
+  margin: 10px 0 0 10px;
+}
+.restaurant ul li a p {
+  font-weight: 300;
+  margin: 0 0 10px 10px;
+}
+
+.icons {
+  display: inline-block;
+  width: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.new-tag {
+  position: relative;
+  left: 73%;
+  bottom: 60%;
+  margin-bottom: -25px;
+  height: 30px;
+  width: 80px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #99E2D0;
+  color: #418574;
+  border-radius: 3px;
+}
+
+.heart {
+  position: relative;
+  left: 85%;
+  bottom: 23%;
+  margin-bottom: -25px;
+  font-size: 26px;
+  font-weight: 300;
+  background-color: white;
+  border: none;
+  color: black;
+  z-index: 10;
+}
+.heart .heart-liked {
+  display: none;
+}
+.heart:focus {
+  color: #9356DC;
+}
+.heart:focus .heart-not-liked {
+  display: none;
+}
+.heart:focus .heart-liked {
+  display: inline-block;
+}
+
+.button {
+  border: none;
+  font-size: 18px;
+  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
+  transition-duration: 0.1s;
+}
+.button:active {
+  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.5);
 }/*# sourceMappingURL=main.css.map */

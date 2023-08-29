@@ -1,0 +1,27 @@
+footer {
+    @include flex-column;
+    width: 100%;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    & h3 {
+        width: 90%;
+        margin: 30px auto;
+    }
+    & ul {
+        width: 90%;
+        margin: 0 auto 30px;
+        & li {
+            color: white;
+            margin-bottom: 5px;
+            & .footer-link {
+                color: white;
+                font-size: 18px;
+                text-decoration: none;
+                & .icons {
+                    width: 30px;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

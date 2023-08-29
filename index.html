@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Shrikhand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
     <script
@@ -30,35 +30,118 @@
       <article class="booking-explore">
         <h1>Book the menu you like</h1>
         <p>Discover top-of-the-art restarants we picked for you</p>
-        <button>Explore our restarants</button>
+        <button class="button">Explore our restarants</button>
       </article>
-
       <article class="booking-how">
         <h1>How it works</h1>
-        <button>
-          <span>1</span>
-          <p>
-            <i class="fa-solid fa-mobile-screen-button icons"></i>
-            Choose a restarant
-          </p>
-        </button>
-        <button>
-          <span>2</span>
-          <p>
-            <i class="fa-solid fa-list-ul icons"></i>
-            Create your menu
-          </p>
-        </button>
-        <button>
-          <span>3</span>
-          <p>
-            <i class="fa-solid fa-store icons"></i>
-            Go enjoy it at the restarant
-          </p>
-        </button>
+        <ul>
+          <li>
+            <button class="button">
+              <span>1</span>
+              <p>
+                <i class="fa-solid fa-mobile-screen-button icons"></i>
+                Choose a restarant
+              </p>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <span>2</span>
+              <p>
+                <i class="fa-solid fa-list-ul icons"></i>
+                Create your menu
+              </p>
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <span>3</span>
+              <p>
+                <i class="fa-solid fa-store icons"></i>
+                Go enjoy it at the restarant
+              </p>
+            </button>
+          </li>
+        </ul>
       </article>
     </section>
 
-    <main></main>
+    <main class="restaurant fonts">
+      <h1>Restaurants</h1>
+      <ul>
+        <li>
+          <a href="">
+            <img src="./src/images/restaurant-1.jpg" alt="" />
+            <h4 class="new-tag">New</h4>
+            <h3>The Full Pallette</h3>
+            <p>New York</p>
+          </a>
+          <button class="heart">
+            <i class="fa-regular fa-heart heart-not-liked"></i
+            ><i class="fa-solid fa-heart heart-liked"></i>
+          </button>
+        </li>
+        <li>
+          <a href="">
+            <img src="./src/images/restaurant-2.jpg" alt="" />
+            <h4 class="new-tag">New</h4>
+            <h3>The Enchanted Plate</h3>
+            <p>New York</p>
+          </a>
+          <button class="heart">
+            <i class="fa-regular fa-heart heart-not-liked"></i
+            ><i class="fa-solid fa-heart heart-liked"></i>
+          </button>
+        </li>
+        <li>
+          <a href="">
+            <img src="./src/images/restaurant-3.jpg" alt="" />
+            <h3>Bastille</h3>
+            <p>New York</p>
+          </a>
+          <button class="heart">
+            <i class="fa-regular fa-heart heart-not-liked"></i
+            ><i class="fa-solid fa-heart heart-liked"></i>
+          </button>
+        </li>
+        <li>
+          <a href="">
+            <img src="./src/images/restaurant-4.jpg" alt="" />
+            <h3>La Courmand</h3>
+            <p>New York</p>
+          </a>
+          <button class="heart">
+            <i class="fa-regular fa-heart heart-not-liked"></i
+            ><i class="fa-solid fa-heart heart-liked"></i>
+          </button>
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+      <h3 class="titles">ohmyfood</h3>
+      <ul class="fonts">
+        <li>
+          <a href="" class="footer-link"
+            ><i class="fa-solid fa-utensils icons"></i>Suggest a restaurant</a
+          >
+        </li>
+        <li>
+          <a href="" class="footer-link"
+            ><i class="fa-solid fa-handshake-angle icons"></i></i></i>Become a partner</a
+          >
+        </li>
+        <li>
+          <a href="" class="footer-link"
+            >Legal</a
+          >
+        </li>
+        <li>
+          <a href="" class="footer-link"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
