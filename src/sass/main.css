@@ -83,7 +83,7 @@ select {
   font-family: "Roboto", sans-serif;
 }
 
-.header-home {
+.header {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -91,7 +91,7 @@ select {
   align-items: center;
   width: 100%;
 }
-.header-home__title {
+.header__title {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -104,7 +104,7 @@ select {
   box-shadow: 0px 1px 5px 0px rgba(153, 153, 153, 0.52);
   z-index: 10;
 }
-.header-home__location {
+.header__location {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -115,7 +115,7 @@ select {
   font-size: 18px;
   background-color: rgb(230, 230, 230);
 }
-.header-home__location p {
+.header__location p {
   padding-right: 40px;
 }
 
@@ -297,7 +297,17 @@ footer ul li .footer-link .icons {
   border-radius: 3px;
 }
 
-.heart {
+.button {
+  border: none;
+  font-size: 18px;
+  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
+  transition-duration: 0.1s;
+}
+.button:active {
+  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.5);
+}
+
+.heart-btn {
   position: relative;
   left: 85%;
   bottom: 23%;
@@ -309,25 +319,26 @@ footer ul li .footer-link .icons {
   color: black;
   z-index: 10;
 }
-.heart .heart-liked {
+.heart-btn .heart-liked {
   display: none;
 }
-.heart:focus {
+.heart-btn:focus {
   color: #9356DC;
 }
-.heart:focus .heart-not-liked {
+.heart-btn:focus .heart-not-liked {
   display: none;
 }
-.heart:focus .heart-liked {
+.heart-btn:focus .heart-liked {
   display: inline-block;
 }
 
-.button {
+.back-btn {
+  display: block;
+  position: absolute;
+  left: 6%;
+  top: 22px;
+  z-index: 10;
+  background-color: white;
   border: none;
-  font-size: 18px;
-  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
-  transition-duration: 0.1s;
-}
-.button:active {
-  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.5);
+  font-size: 22px;
 }/*# sourceMappingURL=main.css.map */
