@@ -1,11 +1,12 @@
 .header {
     @include flex-column;
+    background-color: white;
     width: 100%;
     &__title{
         @include flex-column;
         height: 75px;
         width: 100%;
-        font-size: 18px;
+        font-size: 16px;
         border: 1px solid white;
         box-shadow: 0px 1px 5px 0px rgba(153, 153, 153, 0.52);
         z-index: 10;
