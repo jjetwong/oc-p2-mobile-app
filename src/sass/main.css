@@ -326,20 +326,33 @@ select {
   text-align: start;
   overflow: hidden;
 }
-.menu-card__button:focus .menu-card__tick {
-  display: block;
+.menu-card__button:hover .menu-card__info {
+  transition: width 0.4s ease-in;
+  width: 78%;
+}
+.menu-card__button:hover .menu-card__tick-icon {
+  transition: transform 0.3s ease-in;
+  transform: rotate(0deg);
 }
 .menu-card__button:focus .menu-card__info {
+  transition: width 0.4s ease-in;
   width: 78%;
+}
+.menu-card__button:focus .menu-card__tick-icon {
+  transition: transform 0.4s ease-in;
+  transform: rotate(0deg);
 }
 .menu-card__info {
   width: 100%;
+  transition: width 0.3s linear;
+  border: none;
 }
 .menu-card__title {
   width: 60%;
   padding-top: 5px;
   padding-left: 10px;
   font-size: 17px;
+  border: none;
 }
 .menu-card__description {
   position: relative;
@@ -351,6 +364,7 @@ select {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  border: none;
 }
 .menu-card__price {
   display: inline-block;
@@ -359,6 +373,7 @@ select {
   font-size: 17px;
   width: 10%;
   margin: 0 10px;
+  border: none;
 }
 .menu-card__tick {
   display: block;
@@ -371,11 +386,14 @@ select {
   text-align: center;
   font-size: 23px;
   color: white;
+  border: none;
 }
 .menu-card__tick-icon {
   position: relative;
   right: 5px;
   top: 32px;
+  transform: rotate(-360deg);
+  border: none;
 }
 
 .icons {
@@ -427,7 +445,18 @@ select {
   display: none;
 }
 .heart-btn:focus {
-  color: #9356DC;
+  background: linear-gradient(#FFF 20%, #9356DC 50%);
+  background-size: auto 500%;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: heart 0.4s linear 1;
+  animation-fill-mode: forwards;
+}
+@keyframes heart {
+  to {
+    background-position: center;
+  }
 }
 .heart-btn:focus .heart-not-liked {
   display: none;

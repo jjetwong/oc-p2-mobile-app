@@ -23,7 +23,17 @@
         display: none;
     }
     &:focus {
-        color: $primary-color;
+        background: linear-gradient( #FFF 20%, $primary-color 50%);
+        background-size:  auto 500%;
+        color: transparent;
+        background-clip: text;
+        animation: heart 0.4s linear 1;
+        animation-fill-mode: forwards;
+        @keyframes heart {
+            to {
+            background-position: center;
+            }
+        }
         & .heart-not-liked {
             display: none;
         }
@@ -37,6 +47,7 @@
     bottom: 75px;
     background-color: $light-gray;
 }
+
 
 .back-btn {
     display: block;

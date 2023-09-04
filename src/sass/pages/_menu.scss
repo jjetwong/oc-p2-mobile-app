@@ -2,12 +2,6 @@
     background-color: $light-gray;
 }
 
-.banner {
-    &__img {
-
-    }
-}
-
 .main {
     position: relative;
     bottom: 40px;
@@ -47,23 +41,39 @@
         margin: 10px 0;
         text-align: start;
         overflow: hidden;
-        &:focus {
-            .menu-card__tick {
-                display: block;
-            }
+        &:hover {
             .menu-card__info {
+                transition: width 0.4s ease-in;
                 width: 78%;
+            }
+            .menu-card__tick-icon {
+                transition: transform 0.3s ease-in;
+                transform: rotate(0deg);
+            }
+        }
+
+        &:focus {
+            .menu-card__info {
+                transition: width 0.4s ease-in;
+                width: 78%;
+            }
+            .menu-card__tick-icon {
+                transition: transform 0.4s ease-in;
+                transform: rotate(0deg);
             }
         }
     }
     &__info {
         width: 100%;
+        transition: width 0.3s linear;
+        border: none;
     }
     &__title {
         width: 60%;
         padding-top: 5px;
         padding-left: 10px;
         font-size: 17px;
+        border: none;
     }
     &__description {
         position: relative;
@@ -75,6 +85,7 @@
         overflow: hidden;
         white-space:nowrap; 
         text-overflow: ellipsis;
+        border: none;
     }
     &__price {
         display: inline-block;
@@ -83,6 +94,7 @@
         font-size: 17px;
         width: 10%;
         margin: 0 10px;
+        border: none;
     }
     &__tick {
         display: block;
@@ -95,10 +107,13 @@
         text-align: center;
         font-size: 23px;
         color: white;
+        border: none;
     }
     &__tick-icon {
         position: relative;
         right: 5px;
         top: 32px;
+        transform: rotate(-360deg);
+        border: none;
     }
 }
