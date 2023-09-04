@@ -19,45 +19,46 @@
   <body class="fonts">
     <header class="header">
       <div class="header__title">
-        <h1 class="titles">ohmyfood</h1>
+        <h1 class="logo">ohmyfood</h1>
       </div>
-      <div class="header__location fonts">
+      <div class="header__location">
         <p><i class="fa-solid fa-location-dot icons"></i> Paris, Bellville</p>
       </div>
     </header>
 
-    <section class="booking fonts">
-      <article class="booking__explore">
-        <h1>Book the menu you like</h1>
-        <p>Discover top-of-the-art restarants we picked for you</p>
-        <button class="button">Explore our restarants</button>
+    <section class="booking">
+      <article class="booking-explore">
+        <h1 class="booking-explore__title">Book the menu you like</h1>
+        <p class="booking-explore__info">Discover top-of-the-art restarants we picked for you</p>
+        <button class="booking-explore__btn button">Explore our restarants</button>
       </article>
-      <article class="booking__how">
-        <h1>How it works</h1>
-        <ul>
-          <li>
-            <button class="button">
-              <span>1</span>
-              <p>
-                <i class="fa-solid fa-mobile-screen-button icons"></i>
+
+      <article class="booking-how">
+        <h1 class="booking-how__title">How it works</h1>
+        <ul class="booking-how__list">
+          <li class="booking-how__card">
+            <button class="booking-how__btn button">
+              <span class="booking-how__num">1</span>
+              <p class="booking-how__info">
+                <i class="fa-solid fa-mobile-screen-button booking-how__icon icons"></i>
                 Choose a restarant
               </p>
             </button>
           </li>
-          <li>
-            <button class="button">
-              <span>2</span>
-              <p>
-                <i class="fa-solid fa-list-ul icons"></i>
+          <li class="booking-how__card">
+            <button class="booking-how__btn button">
+              <span class="booking-how__num">2</span>
+              <p class="booking-how__info">
+                <i class="fa-solid fa-list-ul booking-how__icon icons"></i>
                 Create your menu
               </p>
             </button>
           </li>
-          <li>
-            <button class="button">
-              <span>3</span>
-              <p>
-                <i class="fa-solid fa-store icons"></i>
+          <li class="booking-how__card">
+            <button class="booking-how__btn button">
+              <span class="booking-how__num">3</span>
+              <p class="booking-how__info">
+                <i class="fa-solid fa-store booking-how__icon icons"></i>
                 Go enjoy it at the restarant
               </p>
             </button>
@@ -66,49 +67,53 @@
       </article>
     </section>
 
-    <main class="restaurant fonts">
-      <h1>Restaurants</h1>
-      <ul>
-        <li>
-          <a href="./menu-1.html">
-            <img src="./src/images/restaurant-1.jpg" alt="" />
+    <main class="restaurant">
+      <h1 class="restaurant__title">Restaurants</h1>
+      <ul class="restaurant__list">
+        
+        <li class="restaurant-card">
+          <a class="restaurant-card__link" href="./menu-1.html">
+            <img class="restaurant-card__img" src="./src/images/restaurant-1.jpg" alt="" />
             <h4 class="new-tag">New</h4>
-            <h3>The Full Pallette</h3>
-            <p>New York</p>
+            <h3 class="restaurant-card__title">The Full Pallette</h3>
+            <p class="restaurant-card__info">New York</p>
           </a>
           <button class="heart-btn">
             <i class="fa-regular fa-heart heart-not-liked"></i
             ><i class="fa-solid fa-heart heart-liked"></i>
           </button>
         </li>
-        <li>
-          <a href="">
-            <img src="./src/images/restaurant-2.jpg" alt="" />
+
+        <li class="restaurant-card">
+          <a class="restaurant-card__link" href="">
+            <img class="restaurant-card__img" src="./src/images/restaurant-2.jpg" alt="" />
             <h4 class="new-tag">New</h4>
-            <h3>The Enchanted Plate</h3>
-            <p>New York</p>
+            <h3 class="restaurant-card__title">The Enchanted Plate</h3>
+            <p class="restaurant-card__info">New York</p>
           </a>
           <button class="heart-btn">
             <i class="fa-regular fa-heart heart-not-liked"></i
             ><i class="fa-solid fa-heart heart-liked"></i>
           </button>
         </li>
-        <li>
-          <a href="">
-            <img src="./src/images/restaurant-3.jpg" alt="" />
-            <h3>Bastille</h3>
-            <p>New York</p>
+
+        <li class="restaurant-card">
+          <a class="restaurant-card__link" href="">
+            <img class="restaurant-card__img" src="./src/images/restaurant-3.jpg" alt="" />
+            <h3 class="restaurant-card__title">Bastille</h3>
+            <p class="restaurant-card__info">New York</p>
           </a>
           <button class="heart-btn">
             <i class="fa-regular fa-heart heart-not-liked"></i
             ><i class="fa-solid fa-heart heart-liked"></i>
           </button>
         </li>
-        <li>
-          <a href="">
-            <img src="./src/images/restaurant-4.jpg" alt="" />
-            <h3>La Courmand</h3>
-            <p>New York</p>
+
+        <li class="restaurant-card">
+          <a class="restaurant-card__link" href="">
+            <img class="restaurant-card__img" src="./src/images/restaurant-4.jpg" alt="" />
+            <h3 class="restaurant-card__title">La Courmand</h3>
+            <p class="restaurant-card__info">New York</p>
           </a>
           <button class="heart-btn">
             <i class="fa-regular fa-heart heart-not-liked"></i
@@ -119,25 +124,25 @@
     </main>
 
     <footer class="footer">
-      <h3 class="titles">ohmyfood</h3>
-      <ul>
+      <h3 class="footer__title logo">ohmyfood</h3>
+      <ul class="footer__list">
         <li>
-          <a href="" class="footer-link"
+          <a href="" class="footer__link"
             ><i class="fa-solid fa-utensils icons"></i>Suggest a restaurant</a
           >
         </li>
         <li>
-          <a href="" class="footer-link"
+          <a href="" class="footer__link"
             ><i class="fa-solid fa-handshake-angle icons"></i></i></i>Become a partner</a
           >
         </li>
         <li>
-          <a href="" class="footer-link"
+          <a href="" class="footer__link"
             >Legal</a
           >
         </li>
         <li>
-          <a href="" class="footer-link"
+          <a href="" class="footer__link"
             >Contact</a
           >
         </li>

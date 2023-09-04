@@ -1,27 +1,26 @@
-footer {
+.footer {
     @include flex-column;
     width: 100%;
     background-color: rgb(60, 60, 60);
     color: white;
-    & h3 {
+    &__title {
         width: 90%;
         margin: 30px auto;
     }
-    & ul {
+    &__list {
         width: 90%;
         margin: 0 auto 30px;
-        & li {
-            color: white;
-            margin-bottom: 5px;
-            & .footer-link {
-                color: white;
-                font-size: 18px;
-                text-decoration: none;
-                & .icons {
-                    width: 30px;
-                    text-align: start;
-                }
-            }
-        }
     }
+    &__link {
+        color: white;
+        margin-bottom: 5px;
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .icons {
+        width: 25px;
+        text-align: start;
+    }
+        
 }

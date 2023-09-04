@@ -39,7 +39,7 @@ body {
 }
 
 /* A elements that don't have a class get default styles */
-a:not([class]) {
+a {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
   text-decoration: none;
@@ -75,7 +75,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.titles {
+.logo {
   font-family: "Shrikhand", cursive;
 }
 
@@ -120,7 +120,7 @@ select {
   padding-right: 40px;
 }
 
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -130,32 +130,31 @@ footer {
   background-color: rgb(60, 60, 60);
   color: white;
 }
-footer h3 {
+.footer__title {
   width: 90%;
   margin: 30px auto;
 }
-footer ul {
+.footer__list {
   width: 90%;
   margin: 0 auto 30px;
 }
-footer ul li {
+.footer__link {
   color: white;
   margin-bottom: 5px;
-}
-footer ul li .footer-link {
   color: white;
   font-size: 18px;
   text-decoration: none;
 }
-footer ul li .footer-link .icons {
-  width: 30px;
+.footer .icons {
+  width: 25px;
   text-align: start;
 }
 
 .booking {
   margin-bottom: 20px;
 }
-.booking .booking__explore {
+
+.booking-explore {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -163,17 +162,17 @@ footer ul li .footer-link .icons {
   align-items: center;
   background-color: rgb(240, 240, 240);
 }
-.booking .booking__explore h1 {
+.booking-explore__title {
   margin: 30px auto;
   font-size: 26px;
 }
-.booking .booking__explore p {
+.booking-explore__info {
   text-align: center;
   width: 80%;
   font-size: 18px;
   font-weight: 300;
 }
-.booking .booking__explore button {
+.booking-explore__btn {
   margin: 30px 0 50px 0;
   height: 50px;
   width: 60%;
@@ -181,7 +180,8 @@ footer ul li .footer-link .icons {
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 25px;
 }
-.booking .booking__how {
+
+.booking-how {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -189,12 +189,12 @@ footer ul li .footer-link .icons {
   justify-content: center;
   align-items: center;
 }
-.booking .booking__how h1 {
+.booking-how__title {
   margin: 40px auto 10px;
   font-size: 26px;
   width: 90%;
 }
-.booking .booking__how ul {
+.booking-how__list {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -202,17 +202,17 @@ footer ul li .footer-link .icons {
   align-items: center;
   width: 100%;
 }
-.booking .booking__how ul li {
+.booking-how__card {
   width: 90%;
 }
-.booking .booking__how ul li button {
+.booking-how__btn {
   margin: 15px;
   height: 80px;
   width: 95%;
   background-color: rgb(240, 240, 240);
   border-radius: 25px;
 }
-.booking .booking__how ul li button span {
+.booking-how__num {
   position: absolute;
   left: 5%;
   color: white;
@@ -222,12 +222,12 @@ footer ul li .footer-link .icons {
   border-radius: 15px;
   font-size: 18px;
 }
-.booking .booking__how ul li button p {
+.booking-how__info {
   margin-left: 20px;
   text-align: start;
   font-weight: 500;
 }
-.booking .booking__how ul li button p .icons {
+.booking-how__icon {
   color: gray;
 }
 
@@ -244,14 +244,14 @@ footer ul li .footer-link .icons {
   margin: 20px auto 0px;
   background-color: rgb(240, 240, 240);
 }
-.restaurant h1 {
+.restaurant__title {
   width: 90%;
   height: auto;
   padding: 0;
   margin: 30px auto 0;
   font-size: 26px;
 }
-.restaurant ul {
+.restaurant__list {
   width: 100%;
   margin-bottom: 50px;
   display: flex;
@@ -260,7 +260,8 @@ footer ul li .footer-link .icons {
   justify-content: center;
   align-items: center;
 }
-.restaurant ul li {
+
+.restaurant-card {
   margin: 10px auto;
   background-color: white;
   height: 250px;
@@ -268,17 +269,17 @@ footer ul li .footer-link .icons {
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
 }
-.restaurant ul li a img {
+.restaurant-card__img {
   width: 100%;
   height: 170px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-.restaurant ul li a h3 {
+.restaurant-card__title {
   margin: 10px 0 0 10px;
 }
-.restaurant ul li a p {
+.restaurant-card__info {
   font-weight: 300;
   margin: 0 0 10px 10px;
 }
