@@ -163,17 +163,20 @@ select {
   background-color: rgb(240, 240, 240);
 }
 .booking-explore__title {
-  margin: 30px auto;
+  margin: 30px auto 20px auto;
   font-size: 26px;
+  height: 40px;
 }
 .booking-explore__info {
   text-align: center;
   width: 80%;
+  height: 55px;
   font-size: 18px;
   font-weight: 300;
+  margin: 10px auto;
 }
 .booking-explore__btn {
-  margin: 30px 0 50px 0;
+  margin: 20px 0 50px 0;
   height: 50px;
   width: 60%;
   color: white;
@@ -204,6 +207,8 @@ select {
 }
 .booking-how__card {
   width: 90%;
+  height: 80px;
+  margin-bottom: 30px;
 }
 .booking-how__btn {
   margin: 15px;
@@ -304,7 +309,9 @@ select {
   margin: -30px 20px;
 }
 .menu__section {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  animation: fadeIn 0.5s linear;
+  animation-fill-mode: both;
 }
 .menu__title {
   width: 45px;
@@ -312,7 +319,8 @@ select {
   border-bottom: 3px solid #99E2D0;
 }
 .menu-card {
-  height: 90px;
+  height: 80px;
+  border: none;
 }
 .menu-card__button {
   display: flex;
@@ -325,6 +333,7 @@ select {
   margin: 10px 0;
   text-align: start;
   overflow: hidden;
+  border: none;
 }
 .menu-card__button:hover .menu-card__info {
   transition: width 0.4s ease-in;
@@ -396,6 +405,26 @@ select {
   border: none;
 }
 
+.menu__section:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.menu__section:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.menu__section:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .icons {
   display: inline-block;
   width: 50px;
@@ -424,9 +453,17 @@ select {
   font-size: 18px;
   box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
   transition-duration: 0.1s;
+  padding: 0;
 }
-.button:active {
+.button:hover {
   box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.5);
+  border: none;
+  padding: 0;
+}
+.button:focus {
+  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.5);
+  border: none;
+  padding: 0;
 }
 
 .heart-btn {
@@ -479,4 +516,119 @@ select {
   background-color: white;
   border: none;
   font-size: 22px;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 99;
+  animation: load 0.1s linear 3s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -99;
+  }
+}
+.loader__container {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader__circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle 0.5s alternate infinite ease;
+}
+.loader__circle:nth-child(2) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+.loader__circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+@keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0%;
+  }
+}
+.loader__shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow 0.5s alternate infinite ease;
+}
+.loader__shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+.loader__shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+@keyframes shadow {
+  0% {
+    transform: scaleX(1.5);
+  }
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
+  }
+}
+.loader__loading {
+  position: absolute;
+  top: 80px;
+  font-size: 20px;
+  opacity: 0.5;
+  left: 30%;
+}
+
+.tertiary--circle {
+  background-color: #99E2D0;
+}
+
+.secondary--circle {
+  background-color: #FF79DA;
+}
+
+.primary--circle {
+  background-color: #9356DC;
 }/*# sourceMappingURL=main.css.map */
