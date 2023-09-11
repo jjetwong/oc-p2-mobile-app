@@ -180,7 +180,7 @@ select {
   height: 50px;
   width: 60%;
   color: white;
-  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 25px;
 }
 
@@ -221,7 +221,7 @@ select {
   position: absolute;
   left: 5%;
   color: white;
-  background-color: #9356DC;
+  background-color: #9356dc;
   height: 26px;
   width: 26px;
   border-radius: 15px;
@@ -316,7 +316,7 @@ select {
 .menu__title {
   width: 45px;
   font-weight: 300;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
 }
 .menu-card {
   height: 80px;
@@ -342,7 +342,7 @@ select {
   width: 78%;
 }
 .menu-card__button:hover .menu-card__tick-icon, .menu-card__button:focus .menu-card__tick-icon {
-  transition: transform 0.25s ease-in;
+  transition: transform 0.4s ease-in;
   transform: rotate(0deg);
 }
 .menu-card__info {
@@ -379,7 +379,7 @@ select {
   display: block;
   position: relative;
   left: 10px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   height: 92px;
   width: 22%;
   z-index: 10;
@@ -461,7 +461,7 @@ select {
   font-size: 15px;
   line-height: 30px;
   text-align: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #418574;
   border-radius: 3px;
 }
@@ -500,7 +500,7 @@ select {
   display: none;
 }
 .heart-btn:focus {
-  background: linear-gradient(#fff 20%, #9356DC 50%);
+  background: linear-gradient(#fff 20%, #9356dc 50%);
   background-size: auto 500%;
   color: transparent;
   -webkit-background-clip: text;
@@ -640,13 +640,13 @@ select {
 }
 
 .tertiary--circle {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 
 .secondary--circle {
-  background-color: #FF79DA;
+  background-color: #ff79da;
 }
 
 .primary--circle {
-  background-color: #9356DC;
+  background-color: #9356dc;
 }/*# sourceMappingURL=main.css.map */
