@@ -321,6 +321,8 @@ select {
 .menu-card {
   height: 80px;
   border: none;
+  opacity: 0;
+  animation: fadeIn 0.5s linear forwards;
 }
 .menu-card__button {
   display: flex;
@@ -335,25 +337,17 @@ select {
   overflow: hidden;
   border: none;
 }
-.menu-card__button:hover .menu-card__info {
+.menu-card__button:hover .menu-card__info, .menu-card__button:focus .menu-card__info {
   transition: width 0.4s ease-in;
   width: 78%;
 }
-.menu-card__button:hover .menu-card__tick-icon {
-  transition: transform 0.3s ease-in;
-  transform: rotate(0deg);
-}
-.menu-card__button:focus .menu-card__info {
-  transition: width 0.4s ease-in;
-  width: 78%;
-}
-.menu-card__button:focus .menu-card__tick-icon {
-  transition: transform 0.4s ease-in;
+.menu-card__button:hover .menu-card__tick-icon, .menu-card__button:focus .menu-card__tick-icon {
+  transition: transform 0.25s ease-in;
   transform: rotate(0deg);
 }
 .menu-card__info {
   width: 100%;
-  transition: width 0.3s linear;
+  transition: width 0.25s linear;
   border: none;
 }
 .menu-card__title {
@@ -364,8 +358,6 @@ select {
   border: none;
 }
 .menu-card__description {
-  position: relative;
-  top: 0;
   font-size: 17px;
   display: inline-block;
   padding-left: 10px;
@@ -373,7 +365,6 @@ select {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  border: none;
 }
 .menu-card__price {
   display: inline-block;
@@ -405,16 +396,43 @@ select {
   border: none;
 }
 
-.menu__section:nth-child(1) {
+.menu-starter {
+  animation-delay: 0.25s;
+}
+.menu-starter .menu-card-starter:nth-child(1) {
   animation-delay: 0.5s;
 }
-
-.menu__section:nth-child(2) {
+.menu-starter .menu-card-starter:nth-child(2) {
+  animation-delay: 0.75s;
+}
+.menu-starter .menu-card-starter:nth-child(3) {
   animation-delay: 1s;
 }
 
-.menu__section:nth-child(3) {
+.menu-lunch {
+  animation-delay: 1.25s;
+}
+.menu-lunch .menu-card-lunch:nth-child(1) {
   animation-delay: 1.5s;
+}
+.menu-lunch .menu-card-lunch:nth-child(2) {
+  animation-delay: 1.75s;
+}
+.menu-lunch .menu-card-lunch:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.menu-dinner {
+  animation-delay: 2s;
+}
+.menu-dinner .menu-card-dinner:nth-child(1) {
+  animation-delay: 2.25s;
+}
+.menu-dinner .menu-card-dinner:nth-child(2) {
+  animation-delay: 2.5s;
+}
+.menu-dinner .menu-card-dinner:nth-child(3) {
+  animation-delay: 2.75s;
 }
 
 @keyframes fadeIn {
@@ -482,7 +500,7 @@ select {
   display: none;
 }
 .heart-btn:focus {
-  background: linear-gradient(#FFF 20%, #9356DC 50%);
+  background: linear-gradient(#fff 20%, #9356DC 50%);
   background-size: auto 500%;
   color: transparent;
   -webkit-background-clip: text;
