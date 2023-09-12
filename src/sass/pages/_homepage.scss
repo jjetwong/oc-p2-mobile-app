@@ -1,120 +1,114 @@
 .booking {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .booking-explore {
-    @include flex-column;
-    background-color: $light-gray;
-    &__title {
-        margin: 30px auto 20px auto;
-        font-size: 26px;
-        height: 40px;
-        }
-    &__info {
-        text-align: center;
-        width: 80%;
-        height: 55px;
-        font-size: 18px;
-        font-weight: 300;
-        margin: 10px auto;
-        }
-    &__btn {
-        margin: 20px 0 50px 0;
-        height: 50px;
-        width: 60%;
-        color: white;
-        background-image: linear-gradient(to bottom right,$secondary-color, $primary-color);
-        border-radius: 25px;
-        }
+  @include flex-column;
+  background-color: $light-gray;
+  &__title {
+    margin: 30px auto 20px auto;
+    font-size: 26px;
+    height: 40px;
+  }
+  &__info {
+    text-align: center;
+    width: 80%;
+    height: 55px;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px auto;
+  }
 }
 
 .booking-how {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+  @include flex-column;
+  &__title {
+    margin: 40px auto 10px;
+    font-size: 26px;
+    width: 90%;
+  }
+  &__list {
     @include flex-column;
-    &__title {
-        margin: 40px auto 10px;
-        font-size: 26px;
-        width: 90%;
-    }
-    &__list {
-        @include flex-column;
-        width: 100%;
-    }
-    &__card {
-        width: 90%;
-        height: 80px;
-        margin-bottom: 30px;
-    }
-    &__btn {
-        margin: 15px;
-        height: 80px;
-        width: 95%;
-        background-color: $light-gray;
-        border-radius: 25px;
-    }
-    &__num {
-        position: absolute;
-        left: 5%;
-        color: white;
-        background-color: $primary-color;
-        height: 26px;
-        width: 26px;
-        border-radius: 15px;
-        font-size: 18px;
-    }
-    &__info {
-        margin-left: 20px;
-        text-align: start;
-        font-weight: 500;
-    }
-    &__icon {
-        color: gray;
-    }
+    width: 100%;
+  }
+  &__card {
+    width: 90%;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    margin: 15px;
+    height: 80px;
+    width: 95%;
+    background-color: $light-gray;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
+  }
+  &__num {
+    position: absolute;
+    left: 5%;
+    color: white;
+    background-color: $primary-color;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+  &__info {
+    margin-left: 20px;
+    text-align: start;
+    font-weight: 500;
+  }
+  &__icon {
+    color: gray;
+  }
 }
 
 .restaurant {
-    position: relative;
-    top: 0;
-    @include flex-column;
+  position: relative;
+  top: 0;
+  @include flex-column;
+  height: auto;
+  width: 100%;
+  margin: 20px auto 0px;
+  background-color: $light-gray;
+  &__title {
+    width: 90%;
     height: auto;
+    padding: 0;
+    margin: 30px auto 0;
+    font-size: 26px;
+  }
+  &__list {
     width: 100%;
-    margin: 20px auto 0px;
-    background-color: $light-gray;
-    &__title {
-        width: 90%;
-        height: auto;
-        padding: 0;
-        margin: 30px auto 0;
-        font-size: 26px;
-    }
-    &__list {
-        width: 100%;
-        margin-bottom: 50px;
-        @include flex-column;
-         
-    }
+    margin-bottom: 50px;
+    @include flex-column;
+  }
 }
 
 .restaurant-card {
-    margin: 10px auto;
-    background-color: white;
-    height: 250px;
-    width: 90%;
-    border-radius: 15px;
-    box-shadow: 0px 5px 10px 0px rgba(105,105,105,0.35);
-    &__link{   
-    }
-    &__img {
-        width: 100%;
-        height: 170px;
-        object-fit: cover;
-        border-radius: 15px 15px 0 0;
-    }
-    &__title {
-        margin: 10px 0 0 10px;
-    }
-    &__info {
-        font-weight: 300;
-        margin: 0 0 10px 10px;
-    }
+  margin: 10px auto;
+  background-color: white;
+  height: 250px;
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
+  &__link {
+  }
+  &__img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  &__title {
+    margin: 10px 0 0 10px;
+  }
+  &__info {
+    font-weight: 300;
+    margin: 0 0 10px 10px;
+  }
 }

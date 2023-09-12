@@ -111,38 +111,7 @@
   }
 }
 
-.menu-starter {
-  animation-delay: $starters-animation;
-  @for $i from 1 through $starters {
-    .menu-card-starter:nth-child(#{$i}) {
-      animation-delay: $starters-animation + 0.25s * $i;
-    }
-  }
-}
-
-.menu-lunch {
-  animation-delay: $lunch-animation;
-  @for $i from 1 through $lunch {
-    .menu-card-lunch:nth-child(#{$i}) {
-      animation-delay: $lunch-animation + 0.25s * $i;
-    }
-  }
-}
-
-.menu-dinner {
-  animation-delay: $dinner-animation;
-  @for $i from 1 through $dinner {
-    .menu-card-dinner:nth-child(#{$i}) {
-      animation-delay: $dinner-animation + 0.25s * $i;
-    }
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.order {
+  @include flex-row;
+  width: 100%;
 }

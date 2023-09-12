@@ -175,14 +175,6 @@ select {
   font-weight: 300;
   margin: 10px auto;
 }
-.booking-explore__btn {
-  margin: 20px 0 50px 0;
-  height: 50px;
-  width: 60%;
-  color: white;
-  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
-  border-radius: 25px;
-}
 
 .booking-how {
   margin-bottom: 20px;
@@ -216,6 +208,9 @@ select {
   width: 95%;
   background-color: rgb(240, 240, 240);
   border-radius: 25px;
+  border: none;
+  font-size: 18px;
+  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
 }
 .booking-how__num {
   position: absolute;
@@ -396,53 +391,15 @@ select {
   border: none;
 }
 
-.menu-starter {
-  animation-delay: 0.25s;
-}
-.menu-starter .menu-card-starter:nth-child(1) {
-  animation-delay: 0.5s;
-}
-.menu-starter .menu-card-starter:nth-child(2) {
-  animation-delay: 0.75s;
-}
-.menu-starter .menu-card-starter:nth-child(3) {
-  animation-delay: 1s;
+.order {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.menu-lunch {
-  animation-delay: 1.25s;
-}
-.menu-lunch .menu-card-lunch:nth-child(1) {
-  animation-delay: 1.5s;
-}
-.menu-lunch .menu-card-lunch:nth-child(2) {
-  animation-delay: 1.75s;
-}
-.menu-lunch .menu-card-lunch:nth-child(3) {
-  animation-delay: 2s;
-}
-
-.menu-dinner {
-  animation-delay: 2s;
-}
-.menu-dinner .menu-card-dinner:nth-child(1) {
-  animation-delay: 2.25s;
-}
-.menu-dinner .menu-card-dinner:nth-child(2) {
-  animation-delay: 2.5s;
-}
-.menu-dinner .menu-card-dinner:nth-child(3) {
-  animation-delay: 2.75s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .icons {
   display: inline-block;
   width: 50px;
@@ -466,22 +423,34 @@ select {
   border-radius: 3px;
 }
 
-.button {
+.btn {
   border: none;
   font-size: 18px;
   box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
   transition-duration: 0.1s;
   padding: 0;
 }
-.button:hover {
+.btn:hover, .btn:focus {
   box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.5);
   border: none;
   padding: 0;
 }
-.button:focus {
-  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.5);
-  border: none;
-  padding: 0;
+
+.booking-explore__btn,
+.order__btn {
+  margin: 20px 0 50px 0;
+  height: 50px;
+  width: 60%;
+  color: white;
+  background: #d36bdb;
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 25px;
+  transition: background 0.4s ease-out 0.1s;
+}
+.booking-explore__btn:focus, .booking-explore__btn:hover,
+.order__btn:focus,
+.order__btn:hover {
+  background: none #ff79da;
 }
 
 .heart-btn {
@@ -649,4 +618,90 @@ select {
 
 .primary--circle {
   background-color: #9356dc;
+}
+
+.menu-card .menu-starter {
+  animation-delay: 0.25s;
+}
+.menu-card .menu-starter .menu-card-starter:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.menu-card .menu-starter .menu-card-starter:nth-child(2) {
+  animation-delay: 0.75s;
+}
+.menu-card .menu-starter .menu-card-starter:nth-child(3) {
+  animation-delay: 1s;
+}
+.menu-card .menu-lunch {
+  animation-delay: 1.25s;
+}
+.menu-card .menu-lunch .menu-card-lunch:nth-child(1) {
+  animation-delay: 1.5s;
+}
+.menu-card .menu-lunch .menu-card-lunch:nth-child(2) {
+  animation-delay: 1.75s;
+}
+.menu-card .menu-lunch .menu-card-lunch:nth-child(3) {
+  animation-delay: 2s;
+}
+.menu-card .menu-dinner {
+  animation-delay: 2s;
+}
+.menu-card .menu-dinner .menu-card-dinner:nth-child(1) {
+  animation-delay: 2.25s;
+}
+.menu-card .menu-dinner .menu-card-dinner:nth-child(2) {
+  animation-delay: 2.5s;
+}
+.menu-card .menu-dinner .menu-card-dinner:nth-child(3) {
+  animation-delay: 2.75s;
+}
+
+.menu-enchanted-plate .menu-starter {
+  animation-delay: 0.25s;
+}
+.menu-enchanted-plate .menu-starter .menu-card-starter:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.menu-enchanted-plate .menu-starter .menu-card-starter:nth-child(2) {
+  animation-delay: 0.75s;
+}
+.menu-enchanted-plate .menu-starter .menu-card-starter:nth-child(3) {
+  animation-delay: 1s;
+}
+.menu-enchanted-plate .menu-starter .menu-card-starter:nth-child(4) {
+  animation-delay: 1.25s;
+}
+.menu-enchanted-plate .menu-lunch {
+  animation-delay: 1.5s;
+}
+.menu-enchanted-plate .menu-lunch .menu-card-lunch:nth-child(1) {
+  animation-delay: 1.75s;
+}
+.menu-enchanted-plate .menu-lunch .menu-card-lunch:nth-child(2) {
+  animation-delay: 2s;
+}
+.menu-enchanted-plate .menu-lunch .menu-card-lunch:nth-child(3) {
+  animation-delay: 2.25s;
+}
+.menu-enchanted-plate .menu-dinner {
+  animation-delay: 2.25s;
+}
+.menu-enchanted-plate .menu-dinner .menu-card-dinner:nth-child(1) {
+  animation-delay: 2.5s;
+}
+.menu-enchanted-plate .menu-dinner .menu-card-dinner:nth-child(2) {
+  animation-delay: 2.75s;
+}
+.menu-enchanted-plate .menu-dinner .menu-card-dinner:nth-child(3) {
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main.css.map */
