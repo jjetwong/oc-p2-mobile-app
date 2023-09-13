@@ -1,26 +1,39 @@
 .footer {
-    @include flex-column;
-    width: 100%;
-    background-color: rgb(60, 60, 60);
+  @include flex-column;
+  width: 100%;
+  background-color: rgb(60, 60, 60);
+  color: white;
+  &__title {
+    width: 90%;
+    margin: 30px auto;
+  }
+  &__list {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+  &__link {
     color: white;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .icons {
+    width: 25px;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
     &__title {
-        width: 90%;
-        margin: 30px auto;
+      text-align: center;
     }
     &__list {
-        width: 90%;
-        margin: 0 auto 30px;
+      @include flex-row;
     }
     &__link {
-        color: white;
-        margin-bottom: 5px;
-        color: white;
-        font-size: 18px;
-        text-decoration: none;
+      margin: 0 40px;
     }
-    .icons {
-        width: 25px;
-        text-align: start;
-    }
-        
+  }
 }

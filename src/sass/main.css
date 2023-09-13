@@ -150,256 +150,21 @@ select {
   text-align: start;
 }
 
-.booking {
-  margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  .footer__title {
+    text-align: center;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__link {
+    margin: 0 40px;
+  }
 }
-
-.booking-explore {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(240, 240, 240);
-}
-.booking-explore__title {
-  margin: 30px auto 20px auto;
-  font-size: 26px;
-  height: 40px;
-}
-.booking-explore__info {
-  text-align: center;
-  width: 80%;
-  height: 55px;
-  font-size: 18px;
-  font-weight: 300;
-  margin: 10px auto;
-}
-
-.booking-how {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-.booking-how__title {
-  margin: 40px auto 10px;
-  font-size: 26px;
-  width: 90%;
-}
-.booking-how__list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.booking-how__card {
-  width: 90%;
-  height: 80px;
-  margin-bottom: 30px;
-}
-.booking-how__btn {
-  margin: 15px;
-  height: 80px;
-  width: 95%;
-  background-color: rgb(240, 240, 240);
-  border-radius: 25px;
-  border: none;
-  font-size: 18px;
-  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
-}
-.booking-how__num {
-  position: absolute;
-  left: 5%;
-  color: white;
-  background-color: #9356dc;
-  height: 26px;
-  width: 26px;
-  border-radius: 15px;
-  font-size: 18px;
-}
-.booking-how__info {
-  margin-left: 20px;
-  text-align: start;
-  font-weight: 500;
-}
-.booking-how__icon {
-  color: gray;
-}
-
-.restaurant {
-  position: relative;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  width: 100%;
-  margin: 20px auto 0px;
-  background-color: rgb(240, 240, 240);
-}
-.restaurant__title {
-  width: 90%;
-  height: auto;
-  padding: 0;
-  margin: 30px auto 0;
-  font-size: 26px;
-}
-.restaurant__list {
-  width: 100%;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.restaurant-card {
-  margin: 10px auto;
-  background-color: white;
-  height: 250px;
-  width: 90%;
-  border-radius: 15px;
-  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
-}
-.restaurant-card__img {
-  width: 100%;
-  height: 170px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 15px 15px 0 0;
-}
-.restaurant-card__title {
-  margin: 10px 0 0 10px;
-}
-.restaurant-card__info {
-  font-weight: 300;
-  margin: 0 0 10px 10px;
-}
-
-.menu-page {
-  background-color: rgb(240, 240, 240);
-}
-
-.main {
-  position: relative;
-  bottom: 40px;
-  background-color: rgb(240, 240, 240);
-  border-radius: 35px 35px 0 0;
-}
-.main__title {
-  padding: 35px 20px;
-  font-size: 26px;
-}
-
-.menu {
-  width: 90%;
-  margin: -30px 20px;
-}
-.menu__section {
-  margin-bottom: 30px;
-  animation: fadeIn 0.5s linear;
-  animation-fill-mode: both;
-}
-.menu__title {
-  width: 45px;
-  font-weight: 300;
-  border-bottom: 3px solid #99e2d0;
-}
-.menu-card {
-  height: 80px;
-  border: none;
-  opacity: 0;
-  animation: fadeIn 0.5s linear forwards;
-}
-.menu-card__button {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  background-color: white;
-  border-radius: 12px;
-  width: 100%;
-  height: 70px;
-  margin: 10px 0;
-  text-align: start;
-  overflow: hidden;
-  border: none;
-}
-.menu-card__button:hover .menu-card__info, .menu-card__button:focus .menu-card__info {
-  transition: width 0.4s ease-in;
-  width: 78%;
-}
-.menu-card__button:hover .menu-card__tick-icon, .menu-card__button:focus .menu-card__tick-icon {
-  transition: transform 0.4s ease-in;
-  transform: rotate(0deg);
-}
-.menu-card__info {
-  width: 100%;
-  transition: width 0.25s linear;
-  border: none;
-}
-.menu-card__title {
-  width: 60%;
-  padding-top: 5px;
-  padding-left: 10px;
-  font-size: 17px;
-  border: none;
-}
-.menu-card__description {
-  font-size: 17px;
-  display: inline-block;
-  padding-left: 10px;
-  width: 80%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.menu-card__price {
-  display: inline-block;
-  position: relative;
-  bottom: 8px;
-  font-size: 17px;
-  width: 10%;
-  margin: 0 10px;
-  border: none;
-}
-.menu-card__tick {
-  display: block;
-  position: relative;
-  left: 10px;
-  background-color: #99e2d0;
-  height: 92px;
-  width: 22%;
-  z-index: 10;
-  text-align: center;
-  font-size: 23px;
-  color: white;
-  border: none;
-}
-.menu-card__tick-icon {
-  position: relative;
-  right: 5px;
-  top: 32px;
-  transform: rotate(-360deg);
-  border: none;
-}
-
-.order {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 .icons {
   display: inline-block;
   width: 50px;
@@ -704,4 +469,321 @@ select {
   100% {
     opacity: 1;
   }
+}
+.booking {
+  margin-bottom: 20px;
+}
+
+.booking-explore {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+}
+.booking-explore__title {
+  margin: 30px auto 20px auto;
+  font-size: 26px;
+  height: 40px;
+}
+.booking-explore__info {
+  text-align: center;
+  width: 80%;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 10px auto;
+}
+
+.booking-how {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.booking-how__title {
+  margin: 40px auto 10px;
+  font-size: 26px;
+  width: 90%;
+}
+.booking-how__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.booking-how__card {
+  width: 90%;
+  height: 80px;
+  margin-bottom: 30px;
+}
+.booking-how__btn {
+  margin: 15px;
+  height: 80px;
+  width: 95%;
+  background-color: rgb(240, 240, 240);
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
+}
+.booking-how__num {
+  position: absolute;
+  left: 5%;
+  color: white;
+  background-color: #9356dc;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+.booking-how__info {
+  margin-left: 20px;
+  text-align: start;
+  font-weight: 500;
+}
+.booking-how__icon {
+  color: gray;
+}
+
+.restaurant {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin: 20px auto 0px;
+  background-color: rgb(240, 240, 240);
+}
+.restaurant__title {
+  width: 90%;
+  height: auto;
+  padding: 0;
+  margin: 30px auto 0;
+  font-size: 26px;
+}
+.restaurant__list {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant-card {
+  margin: 10px auto;
+  background-color: white;
+  height: 250px;
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
+}
+.restaurant-card__img {
+  width: 100%;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant-card__title {
+  margin: 10px 0 0 10px;
+}
+.restaurant-card__info {
+  font-weight: 300;
+  margin: 0 0 10px 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .booking-explore--btn {
+    width: 35%;
+  }
+  .booking-how__title {
+    text-align: center;
+  }
+  .booking-how__list {
+    width: 40%;
+  }
+  .booking-how__num {
+    left: 32%;
+  }
+  .restaurant {
+    background-color: white;
+  }
+  .restaurant__title {
+    text-align: center;
+  }
+  .restaurant__list {
+    width: 60%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .restaurant-card {
+    width: 47%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .booking-explore--btn {
+    width: 63%;
+  }
+  .booking-how__title {
+    text-align: center;
+  }
+  .booking-how__list {
+    width: 70%;
+  }
+  .booking-how__num {
+    left: 18.5%;
+  }
+  .restaurant {
+    background-color: white;
+  }
+  .restaurant__title {
+    text-align: center;
+  }
+  .restaurant__list {
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .restaurant-card {
+    width: 47%;
+    margin-bottom: 20px;
+  }
+}
+.menu-page {
+  background-color: rgb(240, 240, 240);
+}
+
+.main {
+  position: relative;
+  bottom: 40px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 35px 35px 0 0;
+}
+.main__title {
+  padding: 35px 20px;
+  font-size: 26px;
+}
+
+.menu {
+  width: 90%;
+  margin: -30px 20px;
+}
+.menu__section {
+  margin-bottom: 30px;
+  animation: fadeIn 0.5s linear;
+  animation-fill-mode: both;
+}
+.menu__title {
+  width: 45px;
+  font-weight: 300;
+  border-bottom: 3px solid #99e2d0;
+}
+.menu-card {
+  height: 80px;
+  border: none;
+  opacity: 0;
+  animation: fadeIn 0.5s linear forwards;
+}
+.menu-card__button {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  width: 100%;
+  height: 70px;
+  margin: 10px 0;
+  text-align: start;
+  overflow: hidden;
+  border: none;
+}
+.menu-card__button:hover .menu-card__info, .menu-card__button:focus .menu-card__info {
+  transition: width 0.4s ease-in;
+  width: 78%;
+}
+.menu-card__button:hover .menu-card__tick-icon, .menu-card__button:focus .menu-card__tick-icon {
+  transition: transform 0.4s ease-in;
+  transform: rotate(0deg);
+}
+.menu-card__info {
+  width: 100%;
+  transition: width 0.25s linear;
+  border: none;
+}
+.menu-card__title {
+  width: 60%;
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: none;
+}
+.menu-card__description {
+  font-size: 17px;
+  display: inline-block;
+  padding-left: 10px;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu-card__price {
+  display: inline-block;
+  position: relative;
+  bottom: 8px;
+  font-size: 17px;
+  width: 10%;
+  margin: 0 10px;
+  border: none;
+}
+.menu-card__tick {
+  display: block;
+  position: relative;
+  left: 10px;
+  background-color: #99e2d0;
+  height: 92px;
+  width: 22%;
+  z-index: 10;
+  text-align: center;
+  font-size: 23px;
+  color: white;
+  border: none;
+}
+.menu-card__tick-icon {
+  position: relative;
+  right: 5px;
+  top: 32px;
+  transform: rotate(-360deg);
+  border: none;
+}
+
+.order {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
