@@ -1,75 +1,9 @@
-.menu-card {
-  $starters: 3;
-  $lunch: 3;
-  $dinner: 3;
-
-  $starters-animation: 0.25s;
-  $lunch-animation: 0.5s + 0.25s * $starters;
-  $dinner-animation: 0.5s + 0.25s * $lunch + 0.25s * $starters;
-
-  .menu-starter {
-    animation-delay: $starters-animation;
-    @for $i from 1 through $starters {
-      .menu-card-starter:nth-child(#{$i}) {
-        animation-delay: $starters-animation + 0.25s * $i;
-      }
-    }
-  }
-
-  .menu-lunch {
-    animation-delay: $lunch-animation;
-    @for $i from 1 through $lunch {
-      .menu-card-lunch:nth-child(#{$i}) {
-        animation-delay: $lunch-animation + 0.25s * $i;
-      }
-    }
-  }
-
-  .menu-dinner {
-    animation-delay: $dinner-animation;
-    @for $i from 1 through $dinner {
-      .menu-card-dinner:nth-child(#{$i}) {
-        animation-delay: $dinner-animation + 0.25s * $i;
-      }
-    }
-  }
+.menu-page {
+  @include fade-in-animation(3, 3, 3);
 }
 
 .menu-enchanted-plate {
-  $starters: 4;
-  $lunch: 3;
-  $dinner: 3;
-
-  $starters-animation: 0.25s;
-  $lunch-animation: 0.5s + 0.25s * $starters;
-  $dinner-animation: 0.5s + 0.25s * $lunch + 0.25s * $starters;
-
-  .menu-starter {
-    animation-delay: $starters-animation;
-    @for $i from 1 through $starters {
-      .menu-card-starter:nth-child(#{$i}) {
-        animation-delay: $starters-animation + 0.25s * $i;
-      }
-    }
-  }
-
-  .menu-lunch {
-    animation-delay: $lunch-animation;
-    @for $i from 1 through $lunch {
-      .menu-card-lunch:nth-child(#{$i}) {
-        animation-delay: $lunch-animation + 0.25s * $i;
-      }
-    }
-  }
-
-  .menu-dinner {
-    animation-delay: $dinner-animation;
-    @for $i from 1 through $dinner {
-      .menu-card-dinner:nth-child(#{$i}) {
-        animation-delay: $dinner-animation + 0.25s * $i;
-      }
-    }
-  }
+  @include fade-in-animation(4, 3, 3);
 }
 
 @keyframes fadeIn {

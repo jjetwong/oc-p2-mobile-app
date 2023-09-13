@@ -1,14 +1,45 @@
-@mixin flex-column{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
-@mixin flex-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fade-in-animation($starters, $lunch, $dinner) {
+  $starters-animation: 0.2s;
+  $lunch-animation: 0.4s + 0.2s * $starters;
+  $dinner-animation: 0.4s + 0.2s * $lunch + 0.2s * $starters;
+  .menu-starter {
+    animation-delay: $starters-animation;
+    @for $i from 1 through $starters {
+      .menu-card-starter:nth-child(#{$i}) {
+        animation-delay: $starters-animation + 0.2s * $i;
+      }
+    }
+  }
+  .menu-lunch {
+    animation-delay: $lunch-animation;
+    @for $i from 1 through $lunch {
+      .menu-card-lunch:nth-child(#{$i}) {
+        animation-delay: $lunch-animation + 0.2s * $i;
+      }
+    }
+  }
+  .menu-dinner {
+    animation-delay: $dinner-animation;
+    @for $i from 1 through $dinner {
+      .menu-card-dinner:nth-child(#{$i}) {
+        animation-delay: $dinner-animation + 0.2s * $i;
+      }
+    }
+  }
 }

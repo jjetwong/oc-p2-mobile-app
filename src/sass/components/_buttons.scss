@@ -82,3 +82,25 @@
   border: none;
   font-size: 22px;
 }
+
+@media screen and (min-width: 1024px) {
+  .booking-explore__btn,
+  .order__btn {
+    width: 35%;
+  }
+  .heart-btn--menu {
+    left: 200px;
+    bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .booking-explore__btn,
+  .order__btn {
+    width: 63%;
+  }
+  .heart-btn--menu {
+    left: 200px;
+    bottom: 80px;
+  }
+}
