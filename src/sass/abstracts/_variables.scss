@@ -4,11 +4,3 @@ $tertiary-color: #99e2d0;
 
 $light-gray: rgb(240, 240, 240);
 $dark-gray: rgb(230, 230, 230);
-
-$starters: 3;
-$lunch: 3;
-$dinner: 3;
-
-$starters-animation: 0.25s;
-$lunch-animation: 0.5s + 0.25s * $starters;
-$dinner-animation: 0.5s + 0.25s * $lunch + 0.25s * $starters;
