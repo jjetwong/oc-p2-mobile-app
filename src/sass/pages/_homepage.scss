@@ -43,9 +43,13 @@
     width: 95%;
     background-color: $light-gray;
     border-radius: 25px;
-    border: none;
-    font-size: 18px;
-    box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
+    &:hover,
+    &:focus {
+      background-color: #fceef8;
+      .booking-how__icon {
+        color: $primary-color;
+      }
+    }
   }
   &__num {
     position: absolute;

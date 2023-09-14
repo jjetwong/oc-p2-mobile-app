@@ -146,8 +146,9 @@ select {
   text-decoration: none;
 }
 .footer .icons {
-  width: 25px;
+  width: 30px;
   text-align: start;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 768px) {
@@ -239,7 +240,7 @@ select {
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
-  animation: heart 0.4s linear 1;
+  animation: heart 1.5s linear 1;
   animation-fill-mode: forwards;
 }
 @keyframes heart {
@@ -548,9 +549,12 @@ select {
   width: 95%;
   background-color: rgb(240, 240, 240);
   border-radius: 25px;
-  border: none;
-  font-size: 18px;
-  box-shadow: 0px 5px 10px 0px rgba(105, 105, 105, 0.35);
+}
+.booking-how__btn:hover, .booking-how__btn:focus {
+  background-color: #fceef8;
+}
+.booking-how__btn:hover .booking-how__icon, .booking-how__btn:focus .booking-how__icon {
+  color: #9356dc;
 }
 .booking-how__num {
   position: absolute;
