@@ -12,6 +12,7 @@ h2,
 h3,
 h4,
 p,
+span,
 figure,
 blockquote,
 dl,
@@ -568,8 +569,10 @@ select {
 }
 .booking-how__info {
   margin-left: 20px;
-  text-align: start;
+  display: block;
+  text-align: left;
   font-weight: 500;
+  width: 290px;
 }
 .booking-how__icon {
   color: gray;
@@ -722,86 +725,86 @@ select {
   animation-fill-mode: both;
 }
 .menu__title {
-  width: 45px;
+  width: 50px;
   font-weight: 300;
   border-bottom: 3px solid #99e2d0;
+  white-space: nowrap;
 }
 .menu-card {
-  height: 80px;
+  height: auto;
   border: none;
   opacity: 0;
   animation: fadeIn 0.5s linear forwards;
 }
 .menu-card__button {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
+  flex-direction: row;
   background-color: white;
   border-radius: 12px;
   width: 100%;
-  height: 70px;
+  height: auto;
   margin: 10px 0;
   text-align: start;
   overflow: hidden;
-  border: none;
+  flex-wrap: wrap;
 }
-.menu-card__button:hover .menu-card__info, .menu-card__button:focus .menu-card__info {
+.menu-card__button:hover .menu-card__description, .menu-card__button:focus .menu-card__description {
   transition: width 0.4s ease-in;
-  width: 78%;
+  width: 65%;
+}
+.menu-card__button:hover .menu-card__tick, .menu-card__button:focus .menu-card__tick {
+  transition: left 0.4s ease-in;
+  left: 270px;
 }
 .menu-card__button:hover .menu-card__tick-icon, .menu-card__button:focus .menu-card__tick-icon {
-  transition: transform 0.4s ease-in;
+  transition: transform 0.45s ease-in;
   transform: rotate(0deg);
 }
-.menu-card__info {
-  width: 100%;
-  transition: width 0.25s linear;
-  border: none;
-}
 .menu-card__title {
-  width: 60%;
-  padding-top: 5px;
+  font-weight: 500;
+  width: 70%;
+  text-align: left;
   padding-left: 10px;
+  margin-top: 12px;
   font-size: 17px;
-  border: none;
+  line-height: 17px;
 }
 .menu-card__description {
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: 300;
   display: inline-block;
   padding-left: 10px;
-  width: 80%;
+  width: 83%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-bottom: 12px;
 }
 .menu-card__price {
-  display: inline-block;
-  position: relative;
-  bottom: 8px;
-  font-size: 17px;
-  width: 10%;
-  margin: 0 10px;
-  border: none;
+  width: 15%;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
 }
 .menu-card__tick {
-  display: block;
   position: relative;
-  left: 10px;
+  left: 350px;
+  bottom: 90px;
   background-color: #99e2d0;
-  height: 92px;
+  height: 110px;
   width: 22%;
   z-index: 10;
   text-align: center;
   font-size: 23px;
   color: white;
-  border: none;
+  margin-bottom: -120px;
 }
 .menu-card__tick-icon {
   position: relative;
-  right: 5px;
-  top: 32px;
+  right: 3px;
+  top: 42px;
   transform: rotate(-360deg);
-  border: none;
 }
 
 .order {
