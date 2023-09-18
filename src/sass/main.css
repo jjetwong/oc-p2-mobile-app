@@ -153,6 +153,11 @@ select {
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    position: relative;
+    top: 20px;
+    height: 150px;
+  }
   .footer__title {
     text-align: center;
   }
@@ -750,7 +755,7 @@ select {
 }
 .menu-card__button:hover .menu-card__description, .menu-card__button:focus .menu-card__description {
   transition: width 0.4s ease-in;
-  width: 65%;
+  width: 63%;
 }
 .menu-card__button:hover .menu-card__tick, .menu-card__button:focus .menu-card__tick {
   transition: left 0.4s ease-in;
@@ -789,11 +794,11 @@ select {
 }
 .menu-card__tick {
   position: relative;
-  left: 350px;
+  left: 360px;
   bottom: 90px;
   background-color: #99e2d0;
   height: 110px;
-  width: 22%;
+  width: 24%;
   z-index: 10;
   text-align: center;
   font-size: 23px;
@@ -843,9 +848,15 @@ select {
     width: 30%;
     margin: 10px auto 30px;
   }
-  .menu-card__info {
-    margin-left: 10px;
-    margin-top: 2px;
+  .menu-card__button:hover .menu-card__description, .menu-card__button:focus .menu-card__description {
+    width: 70%;
+  }
+  .menu-card__button:hover .menu-card__tick, .menu-card__button:focus .menu-card__tick {
+    left: 350px;
+  }
+  .menu-card__tick {
+    left: 435px;
+    width: 20%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -867,8 +878,14 @@ select {
     width: 75%;
     margin: 10px auto 30px;
   }
-  .menu-card__info {
-    margin-left: 8px;
-    margin-top: 2px;
+  .menu-card__button:hover .menu-card__description, .menu-card__button:focus .menu-card__description {
+    width: 70%;
+  }
+  .menu-card__button:hover .menu-card__tick, .menu-card__button:focus .menu-card__tick {
+    left: 400px;
+  }
+  .menu-card__tick {
+    left: 490px;
+    width: 20%;
   }
 }/*# sourceMappingURL=main.css.map */

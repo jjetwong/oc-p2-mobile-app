@@ -27,6 +27,9 @@
 
 @media screen and (min-width: 768px) {
   .footer {
+    position: relative;
+    top: 20px;
+    height: 150px;
     &__title {
       text-align: center;
     }
