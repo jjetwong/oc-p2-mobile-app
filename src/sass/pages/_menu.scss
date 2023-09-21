@@ -15,14 +15,15 @@
   background-color: $light-gray;
   border-radius: 35px 35px 0 0;
   &__title {
-    padding: 35px 20px;
+    margin: 0 5%;
+    padding: 35px 0;
     font-size: 26px;
   }
 }
 
 .menu {
   width: 90%;
-  margin: -30px 20px;
+  margin: -30px 5%;
   &__section {
     margin-bottom: 30px;
     animation: fadeIn 0.5s linear;
@@ -41,28 +42,28 @@
 .menu-card {
   height: auto;
   border: none;
+  margin: 10px 0;
   opacity: 0;
   animation: fadeIn 0.5s linear forwards;
   &__button {
+    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: white;
     border-radius: 12px;
     width: 100%;
     height: auto;
-    margin: 10px 0;
     text-align: start;
     overflow: hidden;
-    flex-wrap: wrap;
     &:hover,
     &:focus {
-      .menu-card__description {
+      .menu-card__info {
         transition: width 0.4s ease-in;
-        width: 63%;
+        width: calc(100% - 83px);
       }
       .menu-card__tick {
-        transition: left 0.4s ease-in;
-        left: 270px;
+        transition: right 0.4s ease-in;
+        right: 0;
       }
       .menu-card__tick-icon {
         transition: transform 0.45s ease-in;
@@ -72,52 +73,48 @@
   }
   &__title {
     font-weight: 500;
-    width: 70%;
-    text-align: left;
+    width: 100%;
+    padding-right: 83px;
     padding-left: 10px;
     margin-top: 12px;
     font-size: 17px;
-    line-height: 17px;
+  }
+  &__info {
+    @include flex-row;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 12px;
   }
   &__description {
     font-size: 15px;
     font-weight: 300;
-    display: inline-block;
-    padding-left: 10px;
-    width: 83%;
+    width: 80%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    margin-bottom: 12px;
   }
   &__price {
-    width: 15%;
-    text-align: left;
-    padding-left: 10px;
+    width: 20%;
+    text-align: center;
     font-size: 15px;
     font-weight: 500;
   }
   &__tick {
-    position: relative;
-    left: 360px;
-    bottom: 90px;
+    @include flex-column;
+    position: absolute;
+    right: -83px;
+    top: 0;
     background-color: $tertiary-color;
-    height: 110px;
-    width: 24%;
-    z-index: 10;
-    text-align: center;
+    height: 100%;
+    width: 83px;
     font-size: 23px;
     color: white;
-    margin-bottom: -120px;
   }
   &__tick-icon {
-    position: relative;
-    right: 3px;
-    top: 42px;
     transform: rotate(-360deg);
   }
 }
-
 .order {
   @include flex-row;
   width: 100%;
@@ -146,19 +143,6 @@
   }
   .menu-card {
     &__button {
-      &:hover,
-      &:focus {
-        .menu-card__description {
-          width: 70%;
-        }
-        .menu-card__tick {
-          left: 350px;
-        }
-      }
-    }
-    &__tick {
-      left: 435px;
-      width: 20%;
     }
   }
 }
@@ -180,19 +164,6 @@
   }
   .menu-card {
     &__button {
-      &:hover,
-      &:focus {
-        .menu-card__description {
-          width: 70%;
-        }
-        .menu-card__tick {
-          left: 400px;
-        }
-      }
-    }
-    &__tick {
-      left: 490px;
-      width: 20%;
     }
   }
 }
