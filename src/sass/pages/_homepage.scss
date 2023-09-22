@@ -1,7 +1,6 @@
 .booking {
   margin-bottom: 20px;
 }
-
 .booking-explore {
   @include flex-column;
   background-color: $light-gray;
@@ -19,7 +18,6 @@
     margin: 10px auto;
   }
 }
-
 .booking-how {
   margin-bottom: 20px;
   @include flex-column;
@@ -72,7 +70,6 @@
     color: gray;
   }
 }
-
 .restaurant {
   position: relative;
   top: 0;
@@ -94,7 +91,6 @@
     @include flex-column;
   }
 }
-
 .restaurant-card {
   margin: 10px auto;
   background-color: white;
@@ -118,7 +114,6 @@
     margin: 0 0 10px 10px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .booking-how {
     &__title {
@@ -148,7 +143,6 @@
     margin-bottom: 20px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .booking-how {
     &__title {
