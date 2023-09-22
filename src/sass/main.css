@@ -851,7 +851,7 @@ select {
     justify-content: center;
     align-items: center;
     align-items: flex-start;
-    width: 75%;
+    width: 80%;
     min-width: 1000px;
   }
   .menu__section {
