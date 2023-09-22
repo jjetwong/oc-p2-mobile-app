@@ -852,6 +852,7 @@ select {
     align-items: center;
     align-items: flex-start;
     width: 75%;
+    min-width: 1000px;
   }
   .menu__section {
     width: 30%;
