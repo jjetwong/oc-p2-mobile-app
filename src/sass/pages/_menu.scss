@@ -1,7 +1,6 @@
 .menu-page {
   background-color: $light-gray;
 }
-
 .banner {
   &__img {
     object-fit: cover;
@@ -20,7 +19,6 @@
     font-size: 26px;
   }
 }
-
 .menu {
   width: 90%;
   margin: -30px 5%;
@@ -38,7 +36,6 @@
   &__list {
   }
 }
-
 .menu-card {
   height: auto;
   border: none;
@@ -119,7 +116,6 @@
   @include flex-row;
   width: 100%;
 }
-
 @media screen and (min-width: 1024px) {
   .banner {
     &__img {
@@ -146,7 +142,6 @@
     }
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .main {
     @include flex-column;

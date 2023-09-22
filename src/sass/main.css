@@ -217,6 +217,7 @@ select {
   background: #d36bdb;
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 25px;
+  cursor: pointer;
   transition: background 0.4s ease-out 0.1s;
 }
 .booking-explore__btn:focus, .booking-explore__btn:hover,
@@ -235,6 +236,7 @@ select {
   background-color: white;
   border: none;
   color: black;
+  cursor: pointer;
   z-index: 10;
 }
 .heart-btn .heart-liked {
@@ -275,6 +277,7 @@ select {
   background-color: white;
   border: none;
   font-size: 22px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
